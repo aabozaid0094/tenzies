@@ -28,3 +28,21 @@
 .darker-color {
     color: var(--darker-color);
 }
+.light-schema {
+    background-color: var(--lighter-color);
+    color: var(--darker-color);
+}
+.dark-schema {
+    background-color: var(--darker-color);
+    color: var(--lighter-color);
+}
+header {
+    padding: 1rem;
+    box-shadow: 0 2px 10px 0 rgba(128, 128, 144, 0.5);
+}
+.color-schema-switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
