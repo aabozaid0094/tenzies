@@ -15,6 +15,7 @@ function App() {
     return (
         <div className="App">
             <Header dark_schema={dark_schema} handle_schema={handle_schema} />
+            <Tenzies dark_schema={dark_schema} />
         </div>
     );
 }
