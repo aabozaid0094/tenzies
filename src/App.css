@@ -1,0 +1,30 @@
+:root {
+    --light-color: rgba(224, 224, 240, 0.7);
+    --lighter-color: rgba(224, 224, 240, 0.5);
+    --dark-color: rgba(32, 32, 48, 0.5);
+    --darker-color: rgba(32, 32, 48, 0.7);
+}
+.light-bg {
+    background-color: var(--light-color);
+}
+.lighter-bg {
+    background-color: var(--lighter-color);
+}
+.dark-bg {
+    background-color: var(--dark-color);
+}
+.darker-bg {
+    background-color: var(--darker-color);
+}
+.light-color {
+    color: var(--light-color);
+}
+.lighter-color {
+    color: var(--lighter-color);
+}
+.dark-color {
+    color: var(--dark-color);
+}
+.darker-color {
+    color: var(--darker-color);
+}
