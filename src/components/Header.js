@@ -1,8 +1,8 @@
 const Header = (props) => {
     return (
-        <header className={props.dark_schema ? "dark-schema" : "light-schema"}>
-            <label class="color-schema-switch toggle">
-                <span class="toggle-label">Light</span>
+        <header className={props.dark_schema ? "darker-schema" : "lighter-schema"}>
+            <label className="color-schema-switch toggle">
+                <span className="toggle-label">Light</span>
                 <input
                     className="toggle-checkbox"
                     type="checkbox"
@@ -10,8 +10,8 @@ const Header = (props) => {
                     checked={props.dark_schema}
                     onChange={props.handle_schema}
                 />
-                <div class="toggle-switch"></div>
-                <span class="toggle-label">Dark</span>
+                <div className="toggle-switch"></div>
+                <span className="toggle-label">Dark</span>
             </label>
         </header>
     );
