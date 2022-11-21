@@ -38,11 +38,53 @@
 }
 header {
     padding: 1rem;
+    text-align: center;
     box-shadow: 0 2px 10px 0 rgba(128, 128, 144, 0.5);
 }
 .color-schema-switch {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
+    cursor: pointer;
+}
+.toggle-checkbox {
+    position: absolute;
+    visibility: hidden;
+}
+.toggle-switch {
+    display: inline-block;
+    background: #ccc;
+    border-radius: 16px;
+    width: 40px;
+    height: 25px;
+    position: relative;
+    vertical-align: middle;
+    transition: background 0.25s;
+}
+.toggle-switch:before,
+.toggle-switch:after {
+    content: "";
+}
+.toggle-switch:before {
+    display: block;
+    background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: left 0.25s;
+}
+.toggle:hover .toggle-switch:before {
+    background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+}
+.toggle-checkbox:checked + .toggle-switch {
+    background: #444;
+}
+.toggle-checkbox:checked + .toggle-switch:before {
+    left: 20px;
 }
