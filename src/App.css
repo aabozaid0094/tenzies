@@ -103,6 +103,18 @@ header {
 .tenzies h2 {
     margin-top: 0;
 }
+.tenzies-solved {
+    display: inline-block;
+    margin: 5px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.light-schema .tenzies-solved {
+    color: #09a341;
+}
+.dark-schema .tenzies-solved {
+    color: #59f3a1;
+}
 .tenzies-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -130,9 +142,10 @@ header {
     background-color: #59e391;
     color: #446;
 }
-.roll-button, .reset-button {
-    margin: 1rem .5rem;
-    padding: .5rem 2rem;
+.roll-button,
+.reset-button {
+    margin: 1rem 0.5rem;
+    padding: 0.5rem 2rem;
     font-size: 1.5rem;
     border-width: 0;
     border-radius: 5px;
