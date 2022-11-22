@@ -32,6 +32,8 @@ const Tenzies = (props) => {
         });
     };
 
+    const reset = () => { set_tenzies(()=>default_tenzies()) }
+
     const toggle_tenzy_freeze = (tenzy_id) => {
         set_tenzies((old_tenzies) => {
             const new_tenzies = Array(old_tenzies.length);
@@ -75,6 +77,13 @@ const Tenzies = (props) => {
                 onClick={roll}
             >
                 Roll
+            </button>
+            <button
+                className="reset-button dark-bg"
+                id="roll_button"
+                onClick={reset}
+            >
+                Reset
             </button>
         </div>
     );
