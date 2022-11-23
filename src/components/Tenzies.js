@@ -1,5 +1,6 @@
 import React from "react";
 import Tenzy from "./Tenzy";
+import Confetti from "react-confetti";
 
 const Tenzies = (props) => {
     // Pre-States
@@ -91,6 +92,7 @@ const Tenzies = (props) => {
                 props.dark_schema ? " dark-schema" : " light-schema"
             }`}
         >
+            {solved && <Confetti />}
             <h2>Tenzies</h2>
             <p>
                 Roll until all dice are the same, click each dice to freeze it
